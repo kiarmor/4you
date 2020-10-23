@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 Route::get('test', function () {
    dd(\App\User::where('referrer_id', '!=', null)->first());
 });
@@ -147,7 +149,7 @@ Route::middleware('auth')->group(function() {
 	Route::any('payment/success', 'PaymentController@success')->name('payment.success');
 	Route::any('payment/bad', 'PaymentController@bad')->name('payment.bad');
 	Route::post('transfer', 'TransferController@index')->name('transfer.index');
- 
+
 	Route::post('payment', 'PaymentController@submit')->name('payment.submit');
 
 	/* Handlers */
@@ -196,7 +198,7 @@ Route::middleware('auth')->group(function() {
 		Route::post('admin/ticket/{id}', 'Admin\TicketController@sendMessage');
 		Route::get('admin/ticket/close/{id}', 'Admin\TicketController@close')->name('admin.ticket.close');
     /* Transfers */
-    Route::get('admin/transfers', 'Admin\TransferController@index')->name('admin.transfers');    
+    Route::get('admin/transfers', 'Admin\TransferController@index')->name('admin.transfers');
 	});
 });
 
@@ -241,3 +243,6 @@ Route::get('confirm', 'AuthenticationController@confirm');
 // Route::get('authentication/page404', 'AuthenticationController@page404')->name('authentication.page404');
 // Route::get('authentication/page500', 'AuthenticationController@page500')->name('authentication.page500');
 // Route::get('authentication/offline', 'AuthenticationController@offline')->name('authentication.offline');
+
+
+

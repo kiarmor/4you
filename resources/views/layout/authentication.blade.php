@@ -17,8 +17,8 @@
         <link rel="stylesheet" href="{{asset('assets/plugins/bootstrap/css/bootstrap.min.css')}}">
         <link rel="stylesheet" href="{{asset('assets/css/style.min.css')}}">
         @stack('after-styles')
-    </head>    
-    <?php 
+    </head>
+    <?php
         $setting = !empty($_GET['theme']) ? $_GET['theme'] : '';
         $theme = "theme-cyan";
         $menu = "";
@@ -46,8 +46,8 @@
 
         <!-- Scripts -->
         @stack('before-scripts')
-        <script src="{{ asset('assets/bundles_new/libscripts.bundle.js') }}"></script>    
+        <script src="{{ asset('assets/bundles_new/libscripts.bundle.js') }}"></script>
         <script src="{{ asset('assets/bundles_new/vendorscripts.bundle.js') }}"></script>
-        @stack('after-scripts')        
+        @stack('after-scripts')
     </body>
 </html>

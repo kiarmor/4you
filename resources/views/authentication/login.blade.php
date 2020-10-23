@@ -8,6 +8,7 @@
             <div class="header">
                 <img class="logo" src="{{asset('assets/images/logo_p.png')}}" alt="">
                 <h5>Вход</h5>
+                <h3>{{app()->getLocale()}}</h3>
             </div>
             <div class="body">
                 <div class="input-group mb-3">
@@ -18,18 +19,18 @@
                 </div>
                 <div class="input-group mb-1">
                     <input type="password" class="form-control" name='password' placeholder="Пароль" required>
-                    <div class="input-group-append">                                
+                    <div class="input-group-append">
                         <span class="input-group-text"><i class="zmdi zmdi-lock"></i></span>
                     </div>
                 </div>
                 <div class="input-group ml-1 mb-3">
-                    <a href="{{route('authentication.forgot')}}">Потеряли пароль?</a> 
+                    <a href="{{route('authentication.forgot')}}">Потеряли пароль?</a>
                 </div>
                 <div class="checkbox">
                     <input id="remember_me" name='remember_me' type="checkbox">
                     <label for="remember_me">Запомнить меня</label>
                 </div>
-                <button class="btn btn-primary btn-block waves-effect waves-light">ВОЙТИ</button>                        
+                <button class="btn btn-primary btn-block waves-effect waves-light">ВОЙТИ</button>
                 <div class="signin_with mt-3">
                     <a href="{{route('authentication.register')}}">или зарегистрироваться</a>
                 </div>

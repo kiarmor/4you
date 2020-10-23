@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'failed' => 'You enter invalid E-Mail or password.',
-    'throttle' => 'Too many requests. Try in: :seconds seconds',
+    'failed' => 'Вы ввели неверный E-Mail или пароль.',
+    'throttle' => 'Слишком много запросов. Попробуйте через: :seconds сек.',
 
 ];

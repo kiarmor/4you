@@ -16,7 +16,7 @@
                         <small class='text-success'><strong>{{ Auth::user()->balance }}</strong> USD</small>
                     </div>
                 </div>
-            </li>            
+            </li>
             <li class="{{ Request::segment(1) === 'dashboard' ? 'active open' : null }}"><a href="{{route('dashboard.index')}}"><i class="zmdi zmdi-home"></i><span>Рабочий стол</span></a></li>
             <li class="{{ Request::segment(1) === 'referrals' ? 'active open' : null }}"><a href="{{route('profile.referrals')}}"><i class="zmdi zmdi-accounts-alt"></i><span>Моя сеть</span></a></li>
             <li class="{{ Request::segment(1) == 'tariff' ? 'active open' : null }}"><a href="{{route('tariff.index')}}"><i class="zmdi zmdi-shopping-cart"></i><span>Магазин</span></a></li>
