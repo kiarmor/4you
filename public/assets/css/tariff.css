@@ -1,0 +1,15 @@
+.tariff-card {
+	width: 340px;
+}
+
+.tariff-card img {
+	max-width: 80%;
+	max-height: 150px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.center {
+	width: 150px;
+	margin: 40px auto; 
+}

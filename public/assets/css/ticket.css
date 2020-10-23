@@ -1,0 +1,89 @@
+.ticket-row {
+	padding: 10px 10px;
+	background-color: #DDDDDD;
+	border-radius: 10px;
+}
+
+.btn-circle {
+    width: 38px;
+    height: 38px;
+    border-radius: 19px !important;
+    text-align: center;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    font-size: 16px !important;
+}
+
+.ticket-dialog {
+    position: relative;
+    border-radius: 10px;
+    background-color: #E1E1E1;
+    height: 370px;
+    overflow: hidden;
+}
+
+.ticket-dialog .ticket-bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+.ticket-dialog .ticket-messages {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.ticket-dialog textarea {
+    resize: none;
+    background-color: #FAF5F5;
+}
+
+.ticket-dialog .input-group-text {
+    background-color: #E9E6E6;
+}
+
+.ticket-dialog p {
+    margin: 0;
+}
+
+.ticket-dialog .ticket-messages > *:last-child {
+    margin-bottom: 75px;
+}
+
+.ticket-dialog  .ticket-message__received {
+    margin: 8px 0;
+    border-radius: 12px;
+    background-color: #CFDEFC; /* #B1C7F1; */
+}
+
+.ticket-dialog  .ticket-message__sent {
+    margin: 8px 0;
+    border-radius: 12px;
+    background-color: #B1C7F1;
+}
+
+.ticket-dialog .ticket-message__sender {
+    font-size: 11px;
+    color: #354A75;
+}
+
+.ticket-dialog .ticket-message__content {
+    font-size: 13px;
+}
+
+.ticket-dialog .ticket-message__attachment {
+    margin: 8px 0;
+    width: 100%;
+    transition: .2s ease-in;
+}
+
+.ticket-dialog .ticket-message__attachment:hover {
+    opacity: .83;
+    cursor: pointer;
+}
+
+.ticket-dialog .ticket-message__bottom {
+    font-size: 10px;
+    color: #7F8080;
+}
