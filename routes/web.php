@@ -246,3 +246,7 @@ Route::get('confirm', 'AuthenticationController@confirm');
 
 
 
+Route::get('/{lang}', function ($lang) {
+    App::setlocale($lang);
+    return view('home');
+});

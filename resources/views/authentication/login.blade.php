@@ -8,7 +8,8 @@
             <div class="header">
                 <img class="logo" src="{{asset('assets/images/logo_p.png')}}" alt="">
                 <h5>Вход</h5>
-                <h3>{{app()->getLocale()}}</h3>
+                <h2>@lang('auth.failed')</h2>
+
             </div>
             <div class="body">
                 <div class="input-group mb-3">
@@ -61,4 +62,39 @@
         </div>
     </div>
 </div>
+<body>
+<div id="app">
+    <div style="background-color: #343a40;">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark frames-container">
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav ml-auto">
+                    @php $locale = /*session()->get('locale');*/ app()->setLocale('en') @endphp
+                    <li class="nav-item dropdown">
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            @switch($locale)
+                                @case('us')
+                                 English
+                                @break
+                                @case('ru')
+                                 Русский
+                                @break
+                                @default
+                                 English
+                            @endswitch
+                            <span class="caret"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="lang/en"> English</a>
+                            <a class="dropdown-item" href="lang/ru"> Русский</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+</div>
+</body>
+</html>
 @stop
